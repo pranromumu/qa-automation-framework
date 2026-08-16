@@ -1,0 +1,27 @@
+
+
+        ┌── Test 1
+        │
+Worker ├── Test 2
+        │
+        ├── Test 3
+        │
+        └── Test 4
+
+
+pytest
+  │
+  ├── Worker 1 → Test 1
+  ├── Worker 2 → Test 2
+  ├── Worker 3 → Test 3
+  └── Worker 4 → Test 4
+
+                pytest
+                   │
+        ┌──────────┼──────────┐
+        ↓          ↓          ↓
+    Worker 1   Worker 2   Worker 3
+        │          │          │
+     User 1     User 2     User 3
+        │          │          │
+      Login      Login      Login

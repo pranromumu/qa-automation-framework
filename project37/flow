@@ -1,0 +1,51 @@
+test_one
+   ↓
+Create Playwright
+   ↓
+Create Browser
+   ↓
+Create Page
+   ↓
+Run test
+   ↓
+Close Browser
+
+
+test_two
+   ↓
+Create Playwright
+   ↓
+Create Browser
+   ↓
+Create Page
+   ↓
+Run test
+   ↓
+Close Browser
+
+
+test_three
+   ↓
+Create Playwright
+   ↓
+Create Browser
+   ↓
+Create Page
+   ↓
+Run test
+   ↓
+Close Browser
+
+
+
+test_project37.py
+│
+├── test_google()
+├── test_bing()
+└── test_wikipedia()
+       │
+       ↓
+   ONE fixture
+       │
+       ↓
+   ONE browser

@@ -1,0 +1,45 @@
+REQUEST
+┌─────────────────────────────┐
+│ Headers                     │
+│                             │
+│ User-Agent: Playwright      │
+│ Accept: application/json    │
+│                             │
+│ Body                        │
+│ { ...data... }              │
+└─────────────────────────────┘
+              ↓
+           SERVER
+              ↓
+RESPONSE
+┌─────────────────────────────┐
+│ Headers                     │
+│                             │
+│ Content-Type: application/json │
+│ Server: ...                 │
+│                             │
+│ Body                        │
+│ { ...data... }              │
+└─────────────────────────────┘
+
+challenge 
+              HTTP REQUEST
+                    │
+          ┌─────────┴─────────┐
+          ↓                   ↓
+       Headers              Body
+          │                   │
+   Content-Type          {"name":"Kabir"}
+   X-Test-User
+          │
+          ↓
+        SERVER
+          │
+          ↓
+              HTTP RESPONSE
+          │
+          ┌─────────┴─────────┐
+          ↓                   ↓
+       Headers              Body
+          │                   │
+   Content-Type          JSON response

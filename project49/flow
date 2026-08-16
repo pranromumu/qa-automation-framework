@@ -1,0 +1,122 @@
+'''
+# from computer 
+Your computer
+     ↓
+pytest
+     ↓
+HTML report
+     ↓
+screenshots
+
+
+# To the CI/CD
+GitHub
+   ↓
+GitHub Actions
+   ↓
+Install Python
+   ↓
+Install dependencies
+   ↓
+Install Playwright
+   ↓
+Run Pytest
+   ↓
+Generate report
+   ↓
+Upload test artifacts
+
+
+#What is CI/CD?
+
+#Imagine you change your code and push it to GitHub:
+
+git push
+   ↓
+GitHub
+   ↓
+🚀 GitHub Actions starts automatically
+   ↓
+Run your tests
+   ↓
+PASS ✅ / FAIL ❌
+
+
+
+Project 49 roadmap
+
+We'll learn this gradually.
+
+Challenge 1
+
+Create a GitHub Actions workflow.
+
+Challenge 2
+
+Run Pytest automatically.
+
+Challenge 3
+
+Install Playwright browsers in CI.
+
+Challenge 4
+
+Generate an HTML report.
+
+Challenge 5
+
+Upload the report as a GitHub Actions artifact.
+
+Challenge 6
+
+Upload screenshots when a test fails.
+
+Challenge 7
+
+Run the complete QA framework automatically.
+
+============================================
+          WORK FLOW
+============================================
+                   GitHub
+                      │
+                      ↓
+               GitHub Actions
+                      │
+              ┌───────┴───────┐
+              ↓               ↓
+         Install deps      Playwright
+              │               │
+              └───────┬───────┘
+                      ↓
+                   Pytest
+                      │
+            ┌─────────┴─────────┐
+            ↓                   ↓
+         PASSED              FAILED
+            │                   │
+            ↓                   ↓
+       HTML report          Screenshot
+            │                   │
+            └─────────┬─────────┘
+                      ↓
+                  Artifacts
+
+
+                  
+project49/
+│
+├── .github/
+│   └── workflows/
+│       └── tests.yml
+│
+├── pages/
+├── components/
+├── tests/
+├── screenshots/
+├── reports/
+├── conftest.py
+├── pytest.ini
+└── requirements.txt
+
+'''

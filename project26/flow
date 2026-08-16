@@ -1,0 +1,36 @@
+             TEST
+               │
+       ┌───────┴───────┐
+       ↓               ↓
+      API              UI
+       │               │
+   Prepare data     Display data
+       │               │
+       └───────┬───────┘
+               ↓
+          Cross-check
+               ↓
+             PASS
+
+===================================
+        API
+         ↓
+       POST
+         ↓
+    Verify 201
+         ↓
+    Read JSON
+         ↓
+     Get ID
+         ↓
+    Build URL
+         ↓
+      Browser
+         ↓
+    Open resource
+         ↓
+    Read UI data
+         ↓
+      Assert
+         ↓
+       PASS

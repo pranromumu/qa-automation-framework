@@ -1,0 +1,35 @@
+
+
+project47/
+│
+├── pages/
+│   ├── login_page.py
+│   └── secure_page.py
+│
+├── conftest.py
+│
+└── tests/
+    └── test_logging_playwright.py
+
+#  Final output
+                    TEST
+                     │
+                     ↓
+              LoginPage.login()
+                     │
+        ┌────────────┼────────────┐
+        ↓            ↓            ↓
+    username     password      button
+        │            │            │
+        └────────────┼────────────┘
+                     ↓
+                   LOGGING
+                     │
+                     ↓
+              SecurePage
+                     │
+                     ↓
+              FlashMessage
+                     │
+                     ↓
+                  #flash

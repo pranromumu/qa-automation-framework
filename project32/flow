@@ -1,0 +1,16 @@
+                 test_data.json
+                       │
+                       ↓
+                  Load JSON
+                       │
+                       ↓
+               Pytest parameterize
+                       │
+                       ↓
+                 Playwright
+                       │
+                ┌──────┴──────┐
+                ↓             ↓
+          Valid login    Invalid login
+                ↓             ↓
+             SUCCESS       EXPECTED ERROR

@@ -1,0 +1,66 @@
+                    Pytest
+                       │
+                       ↓
+                  Fixtures
+                       │
+              ┌────────┴────────┐
+              ↓                 ↓
+           browser             page
+                                │
+                                ↓
+                     authenticated_page
+                                │
+                                ↓
+                           LoginPage
+                                │
+                                ↓
+                             login()
+                                │
+                                ↓
+                         authenticated
+                                │
+                                ↓
+                          SecurePage
+                                │
+                                ↓
+                        FlashMessage
+
+
+qa-automation/
+│
+├── components/
+│   └── flash_message.py
+│
+├── pages/
+│   ├── login_page.py
+│   └── secure_page.py
+│
+├── tests/
+│   └── test_authentication.py
+│
+└── conftest.py
+
+
+                 TEST
+                   │
+                   ↓
+          authenticated_page
+                   │
+                   ↓
+                 page
+                   │
+                   ↓
+              LoginPage
+                   │
+                   ↓
+                login()
+                   │
+                   ↓
+          🔐 AUTHENTICATED
+                   │
+             ┌─────┴─────┐
+             ↓           ↓
+        SecurePage    Other Pages
+             │
+             ↓
+       FlashMessage

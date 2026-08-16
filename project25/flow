@@ -1,0 +1,27 @@
+
+
+
+           INTERCEPT
+               │
+       ┌───────┼────────┐
+       ↓       ↓        ↓
+   CONTINUE   ABORT   FULFILL
+      ↓         ↓        ↓
+    Real      Block     Fake
+   server    request   response
+==================================
+
+Browser requests /posts/1
+          ↓
+     page.route()
+          ↓
+   Playwright intercepts
+          ↓
+     route.fulfill()
+          ↓
+   ┌───────────────────┐
+   │ status: 200       │
+   │ title: fake POST  │
+   └───────────────────┘
+          ↓
+       Browser

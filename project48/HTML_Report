@@ -1,0 +1,17 @@
+
+
+# Generate your first HTML report
+pytest -v --html=report.html
+
+
+#Self-contained report
+pytest -v --html=report.html --self-contained-html
+
+# Create a dedicated reports folder
+pytest -v --html=reports/report.html --self-contained-html
+
+# Run with logging + HTML report
+pytest -v --log-cli-level=INFO --html=reports/report.html --self-contained-html
+
+#Intentionally create a failure
+pytest -v --html=reports/report.html --self-contained-html

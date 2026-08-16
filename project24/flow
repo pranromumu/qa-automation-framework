@@ -1,0 +1,13 @@
+
+
+Open page
+   ↓
+Intercept requests
+   ↓
+Image?
+ ┌───────┴───────┐
+ YES             NO
+ ↓                ↓
+ABORT          CONTINUE
+ ↓                ↓
+Image blocked   Page works

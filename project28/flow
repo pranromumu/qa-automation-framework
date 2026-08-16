@@ -1,0 +1,21 @@
+              FIXTURE
+                 │
+                 ↓
+          Start Playwright
+                 ↓
+           Open browser
+                 ↓
+            Create page
+                 ↓
+             yield page
+                 │
+        ┌────────┴────────┐
+        │                 │
+        ↓                 │
+      TEST                │
+        │                 │
+        └─────────────────┘
+                 ↓
+          browser.close()
+                 ↓
+         playwright.stop()

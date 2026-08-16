@@ -1,0 +1,32 @@
+pytest
+  ↓
+page fixture
+  ↓
+start Playwright
+  ↓
+launch browser
+  ↓
+create page
+  ↓
+test_login_and_verify(page)
+  ↓
+test finishes
+  ↓
+browser.close()
+  ↓
+playwright.stop()
+
+
+project36/
+│
+├── pages/
+│   ├── login_page.py
+│   └── secure_page.py
+│
+├── components/
+│   └── flash_message.py
+│
+├── tests/
+│   └── test_login.py
+│
+└── conftest.py

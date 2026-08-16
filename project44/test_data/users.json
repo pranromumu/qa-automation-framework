@@ -1,0 +1,17 @@
+[
+    {
+        "username": "tomsmith",
+        "password": "SuperSecretPassword!",
+        "expected": true
+    },
+    {
+        "username": "wronguser",
+        "password": "wrongpassword",
+        "expected": false
+    },
+    {
+        "username": "tomsmith",
+        "password": "wrongpassword",
+        "expected": false
+    }
+]

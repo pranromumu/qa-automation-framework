@@ -1,0 +1,53 @@
+project44/
+│
+├── test_data/
+│   └── users.json
+│
+├── pages/
+│   └── login_page.py
+│
+├── conftest.py
+│
+└── tests/
+    └── test_data_login.py
+
+
+                 Test
+                  │
+                  ↓
+             Pytest Fixture
+                  │
+                  ↓
+             test_data.json
+                  │
+                  ↓
+             username/password
+                  │
+                  ↓
+              LoginPage
+                  │
+                  ↓
+                Login
+
+
+Pytest
+   ↓
+Fixtures                    ✅
+   ↓
+Parameterization            ✅
+   ↓
+Test Data Management        ✅
+   ↓
+POM                         ✅
+   ↓
+Fixture Dependencies        ✅
+   ↓
+Authentication              ✅
+   ↓
+API + UI Testing            ✅
+   ↓
+Multiple Environments       ✅
+   ↓
+Parallel Testing            ✅
+   ↓
+Retry Strategies            ✅

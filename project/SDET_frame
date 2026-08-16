@@ -1,0 +1,28 @@
+qa-automation-framework/
+│
+├── .github/                     # 1. The Alarm System (CI/CD)
+│   └── workflows/
+│       └── nightly_tests.yml    # Runs your tests automatically every night!
+│
+├── src/                         # 2. The Engine (Your Framework Code)
+│   ├── pages/                   # Page Object Models (LoginPage.py, CartPage.py)
+│   ├── components/              # Reusable Lego bricks (FlashMessage.py, Navbar.py)
+│   ├── api/                     # API clients (for API testing & data setup)
+│   └── utils/                   # Helpers (Logger.py, Database connections)
+│
+├── tests/                       # 3. The Tests (What Robin the Referee runs)
+│   ├── ui/                      # Playwright UI tests (test_login.py)
+│   └── api/                     # Pure API tests (test_users.py)
+│
+├── data/                        # 4. The Pantry (Test Data)
+│   ├── users.json               # Login credentials
+│   └── products.csv             # Items to test
+│
+├── config/                      # 5. The Remote Control (Configurations)
+│   ├── config_dev.py            # Dev URLs and passwords
+│   └── config_staging.py        # Staging URLs and passwords
+│
+├── conftest.py                  # 6. The Power Plant (Global Pytest Fixtures)
+├── pytest.ini                   # 7. The Rulebook (Pytest settings)
+├── requirements.txt             # 8. The Shopping List (pip install playwright, etc.)
+└── README.md                    # 9. The Map (How to use the framework)

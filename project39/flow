@@ -1,0 +1,55 @@
+conftest.py
+     │
+     ├── browser fixture
+     │
+     ├── page fixture
+     │
+     └── logged_in_page fixture
+              │
+              ↓
+         LoginPage
+              │
+              ↓
+          login()
+
+
+
+
+qa-automation/
+│
+├── pages/
+│   ├── login_page.py
+│   ├── secure_page.py
+│   └── ...
+│
+├── tests/
+│   ├── test_login.py
+│   └── ...
+│
+├── conftest.py
+│
+└── pytest.ini
+
+
+test_secure_page()
+       │
+       ↓
+logged_in_page fixture
+       │
+       ↓
+     page
+       │
+       ↓
+   LoginPage
+       │
+       ↓
+     login()
+       │
+       ↓
+SecurePage
+       │
+       ↓
+get_secure_message()
+       │
+       ↓
+    ASSERT

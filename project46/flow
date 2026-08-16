@@ -1,0 +1,40 @@
+                 QA AUTOMATION
+                      │
+        ┌─────────────┼─────────────┐
+        ↓             ↓             ↓
+     Playwright     Pytest         API
+        │             │             │
+        └─────────────┼─────────────┘
+                      ↓
+                    POM
+                      ↓
+                  Fixtures
+                      ↓
+                Test Data
+                      ↓
+               Environments
+                      ↓
+              Parallel Testing
+                      ↓
+              Retry Strategies
+                      ↓
+                    CI/CD
+
+
+
+#Run if fail wait 2 sec than run again --> pytest tests/test_retry.py -v -s
+#Run after first Run\\ --> pytest tests/test_retry.py -v -s --reruns 3 --reruns-delay 1
+#Rerun ---> pytest tests/test_retry.py -v -s --reruns 3 --reruns-delay 1
+
+                Test
+                 │
+                 ↓
+            Attempt #1
+                 │
+              ❌ FAIL
+                 │
+            wait 1 sec
+                 │
+            Attempt #2
+                 │
+              ✅ PASS

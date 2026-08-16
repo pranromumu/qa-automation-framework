@@ -1,0 +1,263 @@
+
+qa-automation-framework/
+│
+├── tests/
+│   ├── login/
+│   ├── products/
+│   └── checkout/
+│
+├── pages/
+│   ├── login_page.py
+│   ├── home_page.py
+│   └── checkout_page.py
+│
+├── fixtures/
+│
+├── utils/
+│
+├── test_data/
+│
+├── reports/
+│
+├── screenshots/
+│
+├── conftest.py
+├── pytest.ini
+├── requirements.txt
+└── .github/
+    └── workflows/
+        └── tests.yml
+
+
+
+                            QA AUTOMATION ENGINEER
+                             │
+       ┌─────────────────────┼─────────────────────┐
+       ↓                     ↓                     ↓
+   UI Testing            API Testing          Browser State
+   Playwright            Requests/API         Cookies/Storage
+       │                     │                     │
+       └─────────────────────┼─────────────────────┘
+                             ↓
+                          Pytest
+                             ↓
+                     Page Object Model
+                             ↓
+                       Test Framework
+                             ↓
+                         Reporting
+                             ↓
+                       GitHub Actions
+                             ↓
+                            CI/CD
+
+
+🎯 Where you are right now
+
+You're approximately here:
+
+Python/Scraping → ✅
+Playwright fundamentals → ✅
+Browser state → ✅
+Network foundation → 🔄
+Pytest → next major phase
+POM → after Pytest
+CI/CD integration → later
+Professional framework → final
+
+
+🧭 QA Automation Engineer — Updated Roadmap
+🟢 Phase 1 — Python + Web Scraping Foundation
+
+Completed ✅
+
+Project	Skill	Status
+1	Requests + BeautifulSoup basics	✅
+2	HTML elements & selectors	✅
+3	Scraping multiple items	✅
+4	try/except error handling	✅
+5	CSV export	✅
+6	Handling missing data	✅
+7	Project structure	✅
+8	Modular scraper	✅
+9	Debugging scraper	✅
+10	Complete scraper framework	✅
+
+You built a good Python/web-scraping foundation before moving into automation.
+
+🔵 Phase 2 — Playwright UI Automation
+
+Completed ✅
+
+Project	Skill	Status
+1	Browser & page navigation	✅
+2	Login automation	✅
+3	Assertions	✅
+4	Checkboxes	✅
+5	Dropdowns	✅
+6	Tables	✅
+7	File upload	✅
+8	JavaScript alerts	✅
+9	Dynamic loading	✅
+10	Multiple windows/tabs	✅
+11	iFrames	✅
+12	Mouse hover	✅
+13	Drag & drop	✅
+14	Keyboard actions	✅
+15	Screenshots	✅
+
+You have now covered a surprisingly large amount of practical Playwright.
+
+🟣 Phase 3 — Browser State
+
+Completed ✅
+
+Project	Skill	Status
+16	Cookies	✅
+17	localStorage	✅
+18	sessionStorage	✅
+
+You now understand:
+
+Browser
+├── Cookies
+├── localStorage
+└── sessionStorage
+🟠 Phase 4 — Network & API Foundation
+
+Current Phase
+
+Project	Skill	Status
+19	Network requests & responses	✅
+20	API response + JSON	🔄 Current
+21	HTTP methods	⬜
+22	API status-code testing	⬜
+23	Request/response headers	⬜
+24	Network interception basics	⬜
+25	Mocking network responses	⬜
+Important
+
+We're deliberately making this phase gradual because Project 19 was harder for you.
+
+We don't want to jump directly into advanced network interception.
+
+🔴 Phase 5 — Professional Test Architecture
+
+After the network foundation:
+
+Project	Skill	Status
+26	Pytest fundamentals	⬜
+27	Test discovery	⬜
+28	Fixtures	⬜
+29	Assertions with Pytest	⬜
+30	Parameterization	⬜
+31	Data-driven testing	⬜
+32	Setup / teardown	⬜
+33	Configuration management	⬜
+🟡 Phase 6 — Page Object Model
+Project	Skill	Status
+34	Why Page Object Model	⬜
+35	First Page Object	⬜
+36	Multiple Page Objects	⬜
+37	Reusable components	⬜
+38	POM + Pytest	⬜
+39	POM + fixtures	⬜
+
+This is where your scripts start becoming a real automation framework rather than individual scripts.
+
+🟤 Phase 7 — Advanced QA Automation
+Project	Skill	Status
+40	Authentication automation	⬜
+41	API + UI combined testing	⬜
+42	Network mocking	⬜
+43	Multiple environments	⬜
+44	Test data management	⬜
+45	Parallel testing	⬜
+46	Retry strategies	⬜
+47	Logging	⬜
+48	HTML test reports	⬜
+⚙️ Phase 8 — CI/CD
+
+You already have some GitHub Actions / CI/CD knowledge, so we won't spend unnecessary time teaching the absolute basics.
+
+We'll integrate your QA framework with:
+
+GitHub
+   ↓
+GitHub Actions
+   ↓
+Install dependencies
+   ↓
+Run Pytest
+   ↓
+Playwright tests
+   ↓
+Generate report
+   ↓
+Upload artifacts
+
+Projects:
+
+Project	Skill	Status
+49	Run tests with GitHub Actions	⬜
+50	Playwright in CI	⬜
+51	Test reports in CI	⬜
+52	Screenshots/videos on failure	⬜
+53	Complete CI pipeline	⬜
+🏆 Phase 9 — Real QA Automation Framework
+
+Finally we'll build one complete professional project rather than another isolated exercise.
+
+Something like:
+
+qa-automation-framework/
+│
+├── tests/
+│   ├── login/
+│   ├── products/
+│   └── checkout/
+│
+├── pages/
+│   ├── login_page.py
+│   ├── home_page.py
+│   └── checkout_page.py
+│
+├── fixtures/
+│
+├── utils/
+│
+├── test_data/
+│
+├── reports/
+│
+├── screenshots/
+│
+├── conftest.py
+├── pytest.ini
+├── requirements.txt
+└── .github/
+    └── workflows/
+        └── tests.yml
+
+And the final workflow:
+
+                    QA AUTOMATION ENGINEER
+                             │
+       ┌─────────────────────┼─────────────────────┐
+       ↓                     ↓                     ↓
+   UI Testing            API Testing          Browser State
+   Playwright            Requests/API         Cookies/Storage
+       │                     │                     │
+       └─────────────────────┼─────────────────────┘
+                             ↓
+                          Pytest
+                             ↓
+                     Page Object Model
+                             ↓
+                       Test Framework
+                             ↓
+                         Reporting
+                             ↓
+                       GitHub Actions
+                             ↓
+                            CI/CD

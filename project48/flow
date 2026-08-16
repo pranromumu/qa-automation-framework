@@ -1,0 +1,58 @@
+                 QA AUTOMATION
+                      │
+                 Playwright
+                      │
+        ┌─────────────┼─────────────┐
+        ↓             ↓             ↓
+       POM        Components      API
+        │             │             │
+        └─────────────┼─────────────┘
+                      ↓
+                   Pytest
+                      │
+        ┌─────────────┼─────────────┐
+        ↓             ↓             ↓
+     Fixtures     Parameterize    Test Data
+        │
+        ↓
+ Authentication
+        │
+        ↓
+ Environments
+        │
+        ↓
+ Parallel Testing
+        │
+        ↓
+ Retry
+        │
+        ↓
+ Logging
+        │
+        ↓
+   HTML REPORT
+        │
+        ↓
+     CI/CD 🚀
+
+
+
+# What you done 
+
+Pytest
+   ↓
+Fixture
+   ↓
+Playwright
+   ↓
+Page Object Model
+   ↓
+Reusable Component
+   ↓
+Authentication
+   ↓
+Logging
+   ↓
+HTML Report
+   ↓
+Failure Screenshot

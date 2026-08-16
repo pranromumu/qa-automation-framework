@@ -1,0 +1,53 @@
+
+qa-automation/
+│
+├── tests/
+│   └── test_api_ui.py
+│
+├── pages/
+│   ├── login_page.py
+│   └── secure_page.py
+│
+├── components/
+│   └── flash_message.py
+│
+└── conftest.py
+
+API
+ ↓
+Prepare / retrieve data
+ ↓
+Expected result
+ ↓
+Browser
+ ↓
+Actual result
+ ↓
+Compare
+ ↓
+PASS / FAIL
+
+                 API
+                  │
+                  ↓
+          GET /posts/1
+                  │
+                  ↓
+             JSON data
+                  │
+          ┌───────┴────────┐
+          ↓                ↓
+       title             userId
+          │                │
+          └───────┬────────┘
+                  ↓
+                UI
+                  │
+                  ↓
+        /posts/1 displayed
+                  │
+                  ↓
+             ui_body
+                  │
+                  ↓
+             ASSERTIONS

@@ -1,0 +1,62 @@
+             config.py
+                 │
+                 ↓
+        ┌─────────────────┐
+        │ Environment     │
+        │                 │
+        │ dev             │
+        │ staging         │
+        │ production      │
+        └────────┬────────┘
+                 │
+                 ↓
+             base_url
+                 │
+                 ↓
+               Test
+                 │
+                 ↓
+             page.goto()
+
+
+
+                config.py
+                    │
+                    ↓
+             ENVIRONMENTS
+                    │
+          ┌─────────┼─────────┐
+          ↓         ↓         ↓
+         dev     staging   production
+          │         │         │
+          └─────────┼─────────┘
+                    ↓
+                base_url
+                    ↓
+                  TEST
+
+
+                    config.py
+                       │
+                       ↓
+                ENVIRONMENTS
+                       │
+                ┌──────┼──────┐
+                ↓      ↓      ↓
+               dev  staging production
+                       │
+                       ↓
+                    base_url
+                       │
+              ┌────────┴────────┐
+              ↓                 ↓
+         homepage        authenticated_page
+                                  │
+                                  ↓
+                              LoginPage
+                                  │
+                                  ↓
+                                login()
+                                  │
+                                  ↓
+                             Secure Page

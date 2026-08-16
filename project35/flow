@@ -1,0 +1,20 @@
+project35/
+│
+├── pages/
+│   ├── login_page.py
+│   └── secure_page.py
+│
+├── components/
+│   └── flash_message.py
+│
+└── test_login.py
+
+                Test
+                 │
+        ┌────────┴────────┐
+        ↓                 ↓
+    LoginPage         SecurePage
+                          │
+                          ↓
+                   FlashMessage
+                    Component

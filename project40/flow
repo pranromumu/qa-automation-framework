@@ -1,0 +1,24 @@
+project/
+│
+├── components/
+│   └── flash_message.py
+│
+├── pages/
+│   ├── login_page.py
+│   └── secure_page.py
+│
+├── tests/
+│   └── test_secure.py
+│
+└── conftest.py
+
+                  Test
+                   │
+                   ↓
+             SecurePage
+                   │
+                   ↓
+             FlashMessage
+                   │
+                   ↓
+                #flash
