@@ -1,0 +1,25 @@
+
+'''
+name: QA Automation Tests
+
+on:
+  push:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Say Hello
+        run: echo "Hello from GitHub Actions!"
+'''
+
+name: QA Automation Tests
+on:
+    push:
+jobs:
+    test:
+        runs-on: ubintu-latst
+        steps:
+            - name: Say Hello
+              run: echo "Hello from Github Action"

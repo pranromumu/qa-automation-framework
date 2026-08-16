@@ -1,0 +1,24 @@
+'''
+Developer
+   │
+   │ git push
+   ▼
+GitHub
+   │
+   ▼
+GitHub Actions
+   │
+   ├── Install Python
+   ├── Install dependencies
+   ├── Install Playwright
+   ├── Run pytest
+   ├── Generate HTML report
+   └── Upload test artifacts
+          │
+          ▼
+       Test Result
+
+
+
+
+'''
