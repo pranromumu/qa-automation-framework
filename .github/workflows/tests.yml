@@ -1,10 +1,12 @@
-name: QA Automation test
+name: QA Automation Tests
+
 on:
   push:
-    jobs:
-      test:
-        runs -on: ubuntu-latest
-        steps:
-          - name: Say Hello
-            run:echo "Hello from QA Automation!"
 
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Say Hello
+        run: echo "Hello from QA Automation!"
