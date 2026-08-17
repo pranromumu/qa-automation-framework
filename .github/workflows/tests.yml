@@ -2,6 +2,10 @@ name: QA Automation Tests
 
 on:
   push:
+    branches: [main]
+
+  pull_request:
+    branches: [main]
 
 jobs:
   test:
@@ -24,3 +28,6 @@ jobs:
 
       - name: Say Hello
         run: echo "Hello from QA Automation!"
+
+      - name: Run tests
+        run: pytest
