@@ -16,5 +16,8 @@ jobs:
         with:
           python-version: "3.12"
 
+      - name: Install pytest
+        run: pip install pytest
+
       - name: Say Hello
         run: echo "Hello from QA Automation!"
