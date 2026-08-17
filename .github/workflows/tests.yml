@@ -16,8 +16,8 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Install pytest
-        run: pip install pytest
+      - name: Install dependencies
+        run: pip install -r requirements.txt
 
       - name: Say Hello
         run: echo "Hello from QA Automation!"
